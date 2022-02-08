@@ -40,6 +40,7 @@ const createImageNode =()=>{
    const addImage=()=>{
        const newImage= createImageNode();
        mountNode.append(newImage);
+       registerImage(newImage);
    }
   
   addButton.addEventListener("click",addImage);
